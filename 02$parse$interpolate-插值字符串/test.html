@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="../libs/jquery.js"></script>
+  <script src="../libs/angular/angular.js"></script>
+</head>
+<body ng-app="myApp">
+  <p>$parser</p>
+  <div ng-controller="parserController">
+    <input ng-model="firstName" type="text"  placeholder="firstName" />
+    <input ng-model="parserText" type="text" placeholder="Recipient" />
+    <pre>__ parserPreviewText __</pre>
+  </div>
+  <hr>
+  <p>interpolateProvider</p>
+  <div ng-controller="interpolateController">
+    <input ng-model="to" type="email" placeholder="Recipient" />
+      <textarea ng-model="emailBody"></textarea>
+      <pre>__ previewText __</pre>
+  </div>
+</body>
+  <script src="test.js"></script>
+</html>

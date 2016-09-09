@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../libs/jquery.js"></script>
+	<script src="../libs/angular/angular.js"></script>
+	<script src="test.js"></script>
+</head>
+<body>
+	<div ng-controller="firstController">
+		{{testValue}}
+	</div>
+	<hello></hello>
+	<div repeat-count="5">
+		<p>测试complie</p>
+	</div>
+
+	<div ng-repeat="item in [1,2]">
+		<sayhello></sayhello>
+	</div>
+</body>
+</html>
