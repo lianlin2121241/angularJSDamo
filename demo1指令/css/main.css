@@ -1,0 +1,15 @@
+.accordion{
+	width: 300px;
+	border: 1px solid #aaaaaa;
+}
+.title{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	font-size: 13px;
+	background: #cccccc;
+	cursor: pointer;
+}
+.body{
+	padding: 10px;
+}
