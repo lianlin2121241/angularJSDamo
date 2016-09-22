@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../../libs/node_modules/ng-dialog/css/ngDialog.css"/>
+	<link rel="stylesheet" href="../../../libs/node_modules/ng-dialog/css/ngDialog-theme-default.css"/>
+	<link rel="stylesheet" href="../../../libs/node_modules/ng-dialog/css/ngDialog-theme-plain.css"/>
+</head>
+<body>
+	<div ng-controller="thirdController">
+		{{name}}
+	</div>
+	<div ng-controller="secondController">
+		<button ng-click="openDialog()">OpenDialog</button>
+	</div>
+</body>
+<script src="../../../libs/angular/angular.js"></script>
+<script src="../../../libs/node_modules/ng-dialog/js/ngDialog.js"></script>
+<script src="scripts/app.js"></script>
+</html>
