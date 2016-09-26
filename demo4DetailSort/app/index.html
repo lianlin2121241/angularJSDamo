@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.list{
+			height: 300px;
+		    width: 150px;
+		    list-style: none;
+		    margin: 20px;
+		    display: inline-block;
+		    border: 1px solid #cccccc;
+		    vertical-align: middle;
+		    padding: 0px;
+		}
+		.list li{
+			margin: 0px;
+			list-style: none;
+			height: 30px;
+			line-height: 30px;
+			text-indent: 10px;
+			font-size: 12px;
+		}
+		.list li:hover{
+			background-color: #dddddd;
+		}
+	</style>
+</head>
+<body ng-controller="firstController">
+	<ul class="list">
+		<li ng-repeat="item in data|filter:{'isShow':0}">{{item.name}}</li>
+	</ul>
+	<ul class="list">
+		<li ng-repeat="item in data|filter:{'isShow':1}|orderBy:'sort'">{{item.name}}</li>
+	</ul>
+	<button id="changeSort" ng-click="changeSort()">changeSort</button>
+	<script src="../../../libs/angular/angular.js"></script>
+	<script src="scripts/services/dataMakerService.js"></script>
+	<script src="scripts/services/services.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>
